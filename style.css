@@ -1,0 +1,183 @@
+:root {
+  --bg: #f4f1ec;
+  --card: #fffdf9;
+  --text: #171717;
+  --muted: #666;
+  --line: #ddd5ca;
+  --button: #e8ded2;
+  --button-active: #d8c8b8;
+  --danger: #ead0d0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+h1 {
+  margin: 8px 0 2px;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.date {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}
+
+.tracker-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.tracker-row:last-child {
+  border-bottom: 0;
+}
+
+.cat-name {
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.cat-value {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+button, .fileButton {
+  border: 0;
+  border-radius: 12px;
+  background: var(--button);
+  color: var(--text);
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+button:active, .fileButton:active {
+  background: var(--button-active);
+  transform: scale(.99);
+}
+
+.controls button {
+  width: 46px;
+  height: 46px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.wide, .fileButton {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.danger {
+  background: var(--danger);
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 700;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  font-family: inherit;
+  background: white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.history-day {
+  border-bottom: 1px solid var(--line);
+  padding: 10px 0;
+}
+
+.history-day:last-child {
+  border-bottom: 0;
+}
+
+.history-date {
+  font-weight: 700;
+}
+
+.history-details {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.goal-row {
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fileButton input {
+  display: none;
+}
