@@ -1,12 +1,12 @@
 :root {
   --bg: #000000;
-  --card: #ED12FC;
-  --text: #171717;
-  --muted: #666;
-  --line: #ddd5ca;
-  --button: #e8ded2;
-  --button-active: #d8c8b8;
-  --danger: #ead0d0;
+  --card: #000000;
+  --text: #00ff66;
+  --muted: #00cc55;
+  --line: #008833;
+  --button: #001a00;
+  --button-active: #003300;
+  --danger: #330000;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Courier New", monospace;
 }
 
 .app {
@@ -49,10 +49,10 @@ h2 {
 .card {
   background: var(--card);
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 0px;
   padding: 16px;
   margin-bottom: 14px;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+  box-shadow: none;
 }
 
 .tracker-row {
@@ -87,8 +87,8 @@ h2 {
 }
 
 button, .fileButton {
-  border: 0;
-  border-radius: 12px;
+  border: 1px solid var(--line);
+  border-radius: 0px;
   background: var(--button);
   color: var(--text);
   padding: 12px 14px;
@@ -132,7 +132,7 @@ input, textarea {
   padding: 12px;
   font-size: 16px;
   font-family: inherit;
-  background: white;
+  background: #000000;
 }
 
 textarea {
